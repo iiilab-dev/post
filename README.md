@@ -8,9 +8,9 @@ API基于REST架构设计。API具有结构清晰的面向资源的URL，接收J
 
 **接口地址：** `https://service.iiilab.com/openapi/post`
 
-Method：POST
+**请求方式：** POST
 
-Content-Type：application/json
+**Content-Type：** application/json
 
 **请求头(Header)**
 
