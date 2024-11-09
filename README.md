@@ -1,16 +1,16 @@
 # iiiLab视频图片解析接口文档
 
-API基于REST架构设计。API具有结构清晰的面向资源的URL，接收JSON格式的请求体，返回JSON格式的响应，并使用标准的HTTP响应状态码。
+此接口为通用视频图片解析接口，支持解析1000+境内外网站视频、图片、音频
 
-### 帖子资源解析接口
+> API基于REST架构设计。API具有结构清晰的面向资源的URL，接收JSON格式的请求体，返回JSON格式的响应，并使用标准的HTTP响应状态码。
 
-**说明：** 此接口为通用视频图片解析接口，支持解析1000+境内外网站视频、图片、音频
+### 请求参数
 
 **接口地址：** `https://service.iiilab.com/openapi/extract`
 
-**请求方式：** POST
+**请求方式：** `POST`
 
-**Content-Type：** application/json
+**Content-Type：** `application/json`
 
 **请求头(Header)**
 
@@ -26,7 +26,7 @@ x-client-secret|客户秘钥|iiiLab分配给您的客户秘钥|c4ca4238a0b923820
 :---|:---|:---|:---
 url|要解析的帖子页面地址|不可空|`https://weibo.com/detail/4830591038789274`
 
-**🟢成功返回数据示例**
+### 🟢成功返回数据
 
 ```
 {
@@ -173,16 +173,16 @@ url|要解析的帖子页面地址|不可空|`https://weibo.com/detail/483059103
 | medias -> formats | 视频多清晰度列表 | 💭可能有 |
 | medias -> headers | 下载resource_url时需要添加的请求头信息 | 💭可能有 |
 
-  
-**🔴失败返回示例**
+
+### 🔴失败返回示例
 
 ```
 {
-    "message": "clientId和clientSecret不匹配"
+    "message": "链接格式错误"
 }
 ```
 
-**响应HTTP状态码说明**
+### 响应HTTP状态码说明
 
 HTTP状态码|说明|返回内容示例
 :---|:---|:---
@@ -192,6 +192,3 @@ HTTP状态码|说明|返回内容示例
 401|鉴权失败|clientId和clientSecret不匹配
 402|调用次数已用完|接口调用额度已用完，请及时充值
 500|未知错误|该错误一般不会遇到，如果遇到，请联系iiiLab技术支持
-
-
-
