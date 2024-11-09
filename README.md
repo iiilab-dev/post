@@ -6,7 +6,7 @@ API基于REST架构设计。API具有结构清晰的面向资源的URL，接收J
 
 **说明：** 此接口为通用视频图片解析接口，支持解析1000+境内外网站视频、图片、音频
 
-**接口地址：** `https://service.iiilab.com/openapi/post`
+**接口地址：** `https://service.iiilab.com/openapi/extract`
 
 **请求方式：** POST
 
