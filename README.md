@@ -6,7 +6,7 @@ API基于REST架构设计。API具有结构清晰的面向资源的URL，接收J
 
 **说明：** 此接口为通用视频图片解析接口，支持解析1000+境内外网站视频、图片、音频
 
-**接口地址：** https://service.iiilab.com/openapi/post
+**接口地址：** `https://service.iiilab.com/openapi/post`
 
 Method：POST
 
@@ -24,7 +24,7 @@ x-client-secret|客户秘钥|iiiLab分配给您的客户秘钥|c4ca4238a0b923820
 
 参数|参数说明|是否可空|值举例
 :---|:---|:---|:---
-url|要解析的帖子页面地址|不可空|https://weibo.com/detail/4830591038789274
+url|要解析的帖子页面地址|不可空|`https://weibo.com/detail/4830591038789274`
 
 **🟢成功返回数据示例**
 
