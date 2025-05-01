@@ -41,8 +41,7 @@ url|要解析的帖子页面地址|不可空|`https://weibo.com/detail/483059103
         },
         {
             "media_type": "image",
-            "resource_url": "https://example.com/v/c4ca4238a0b923820dcc.jpg",
-            "preview_url": null
+            "resource_url": "https://example.com/v/c4ca4238a0b923820dcc.jpg"
         },
         {
             "media_type": "audio",
