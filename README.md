@@ -1,4 +1,22 @@
-# iiiLab视频图片解析接口文档
+# iiiLab视频图片解析接口文档（老版本）
+
+> [!IMPORTANT]
+> **本文档描述的是 iiiLab 老版本接口。** 2026 年 9 月起，iiiLab 视频解析接口业务已由 [SnapAny 开发者平台](https://platform.snapany.com/zh) 承接：
+>
+> - 老接口**继续可用、长期保留**，现有代码无需改动；但本仓库与 [Wiki](https://github.com/iiilab-dev/post/wiki) 不再更新。
+> - 账号与余额已同步至 SnapAny：用 iiiLab 注册邮箱 + 原密码登录（请用邮箱登录，不支持用户名），剩余次数已 1:1 转为积分，永久有效；邮箱此前已注册过 SnapAny 的，余额已并入现有账号，按原有方式登录即可。
+> - 推荐升级到 SnapAny 新版接口：字段更完整且有正式文档（发布时间、作者与统计数据、字幕、多语言音轨）、单价更低，并新增播放列表、视频转文字、字幕提取。
+> - 新版文档：**[单个帖子提取](https://platform.snapany.com/zh/docs/extract-post)** · [快速开始](https://platform.snapany.com/zh/docs) · [鉴权](https://platform.snapany.com/zh/docs/authentication) · [积分与计费](https://platform.snapany.com/zh/docs/credits)
+> - 充值、余额、余量预警与 API Key 管理请前往 [SnapAny 控制台](https://platform.snapany.com/zh/console)。
+
+### 新旧接口对照
+
+| 老版本（本文档） | SnapAny 新版 |
+| :--- | :--- |
+| `POST https://service.iiilab.com/openapi/extract` | `POST https://api.snapany.com/openapi/v1/extract/post` — [文档](https://platform.snapany.com/zh/docs/extract-post) |
+| `GET https://service.iiilab.com/openapi/available-times` | `GET https://api.snapany.com/openapi/v1/credits/balance`（免费）— [文档](https://platform.snapany.com/zh/docs/credits) |
+| 请求头 `x-client-id` / `x-client-secret` | `Authorization: Bearer sk_snapany_xxx`，在 [控制台 → API Keys](https://platform.snapany.com/zh/console/keys) 创建 — [文档](https://platform.snapany.com/zh/docs/authentication) |
+| 充值与管理 `www.iiilab.com/setting/video/` | [SnapAny 控制台](https://platform.snapany.com/zh/console) |
 
 此接口为通用视频图片解析接口，支持解析1000+境内外网站视频、图片、音频
 
